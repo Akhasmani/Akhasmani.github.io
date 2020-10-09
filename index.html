@@ -408,10 +408,10 @@
     }
     .swipe-wrapper {
       display: flex;
-      transition: height .6s ease-in-out;
+      /* transition: height .6s ease-in-out; */
     }
     .swipe-item {
-      height: fit-content;
+      /* height: fit-content; */
       transition: margin-left .6s ease-in-out;
     }
     .swipe-item > img {
@@ -453,6 +453,10 @@
 
       .rate .mail {
         margin-left: 0;
+      }
+      .rate > div {
+        height: 100%;
+        top: 0;
       }
     }
     @media (max-width: 768px) {
@@ -570,6 +574,9 @@
       .rate .phone {
         margin-left: 0;
       }
+      .rate > div {
+        padding: 30px 0;
+      }
     }
     @media (max-width: 425px) {
       .cta a {
@@ -674,6 +681,9 @@
               <div class="swipe-item">
                 <img src="3.jpg">
               </div>
+              <div class="swipe-item">
+                <img src="4.jpg">
+              </div>
             </div>
           </div>
           <div class="sub-area">
@@ -769,7 +779,8 @@
               <img src="projects/ltw-designworks/ltw-designworks-286.jpg" alt="LTW DESIGNWORKS">
               <div class="vid-wrapper">
                 <div>
-                  <i data-vid="anim" title="Play" onclick="handleVid(event)"></i>
+                  <i data-vid="anim" title="Play"></i>
+                  <!-- <i data-vid="anim" title="Play" onclick="handleVid(event)"></i> -->
                   <span>SEE THE FILM</span>
                 </div>
               </div>
@@ -789,7 +800,8 @@
               <img src="projects/house-of-memories/house-of-memories-286.jpg" alt="HOUSE OF MEMORIES">
               <div class="vid-wrapper">
                 <div>
-                  <i data-vid="vt" title="Play" onclick="handleVid(event)"></i>
+                  <i data-vid="vt" title="Play"></i>
+                  <!-- <i data-vid="vt" title="Play" onclick="handleVid(event)"></i> -->
                 </div>
               </div>
               <video src="vt.mp4" id="vt" controls></video>
